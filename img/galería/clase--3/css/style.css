@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+h1 {
+    color: red;
+}
+
+h1 {
+    color: green;
+}
+/*Color: es la propiedad que le da color a los textos*/
+/* 
+#footer {
+    color: green;
+}
+
+
+.segundaSección {
+    color: aquamarine;
+}
+
+section p {
+    color: blue
+    ;
+}
+.segundaSección h2{
+    color: blueviolet;
+} */
+
+/* Herencia y Cascada*/
+
+section {
+    color: red;
+}
+/* Colocarlo de esta manera hace que se aplique a todas las etiquetas que se encuentren en su interior*/
+
+.primerSección {
+    /*background-color: #012A36;*/
+    /*Background-color:aplico un único color de fondo*/
+    background-image: url(../img/5SZ926w.gif);
+    /*Con herramienta url puedo colocar la ruta de una imagen de la web*/
+    background-repeat: no-repeat;
+    /*background-repeat: con esta propiedad la imagen no se repite*/
+    /*background-position: 50%*/
+    /*Con esta propiedad acomodo la imagen en alguna posición*/
+    
+    background-size: cover;
+    /*Con esta propiedad cubrimos la totalidad del espacio*/
+
+
+}
+
+h2 {
+    /*Alineamos el texto*/
+    text-align: center;
+    /*Google Font*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 5rem;
+    /*1rem = 16px*/
+}
+
+/*Propiedades para las anclas*/
+
+a {
+   text-decoration: none;
+   /*Elimina el subrayado*/
+   font-weight: bold;
+   /*Coloco el texto en negrita*/
+   color: black;
+   text-transform: uppercase;
+   /*Coloco el texto en mayuscula*/
+}
+
+/*Propiedades para las listas*/
+
+li {
+    list-style-type: none;
+    
+}
+
