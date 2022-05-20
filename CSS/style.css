@@ -12,42 +12,29 @@ body {
 .header{
     position: sticky;
     top: 0%;
-    z-index: 1;
-}
-.navbar {
+    z-index: 3;
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
     background-color: #ffc857;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    align-items: center;
+    margin: auto;
+    height: 130px;
 }
+.container-fluid {
+    background-color: #ffc857;
+    align-items: flex-end;
 
-.navbar .logo {
-    height: 100px;
-    width: 100px;
-    grid-column: 2 / 3;
 }
-
-.navbar .menu {
-    grid-column: 5/8;
-    display: flex;
-    justify-content:space-around;
+.navbar-light .navbar-nav .nav-link {
+    color:white;
+    font-weight: bold;
+    text-decoration:none;
+    text-align: center;
+    }
+.logo{
+    width: 150px;
+    margin: 20px;
 }
-
-.navbar ul li {
-    margin-right: 2em;
-    list-style: none;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-}
-
-.navbar a:hover {
-    color: #fff;
-}
-
 .principal {
     height: 135vh;
     background-image: linear-gradient(rgba(16, 16, 16, .8), rgba(16, 16, 16, .9)), url(../img/galería/g11.jpg);
@@ -359,7 +346,7 @@ body {
 /***********************************/
 /*Responsive*/
 /*Generic Laptop 1280x950px*/
-@media screen and (max-width:1280px) and (min-width:950px) {
+/*@media screen and (max-width:1080px) and (min-width:768px) {
     .principal .contenido {
         grid-column: 1 / 1;
         grid-row: 1 / 10;
@@ -378,9 +365,45 @@ body {
         padding-left: 250px;
     }
 }
+<<<<<<< HEAD
 /*Ipad 768x1024px*/
 @media screen and (min-width:599px) and (max-width:1024px) {
     
+=======
+/*Ipad 768x1024px
+@media screen and (min-width:599px) and (max-width:1024px) {
+    .navbar {
+        position: relative;
+      }
+      .navbar .menu {
+        position: absolute;
+        width: 100%;
+        height: 70vh;
+        display: grid;
+        align-items: center;
+        background-color: #EDCB54;
+        transform: translateX(500px);
+        transition: all 1s;
+        margin-top: 34em;
+        z-index: 1;
+      } 
+      
+      .navbar .menu li {
+        list-style: none;
+      }  
+      .navbar .menu li a {
+        text-decoration: none;
+        color: #181818;
+        font-size: 1.2em;
+      } 
+      .navbar .menu-bar {
+        grid-column: 8 / 10;
+        color: #fff;
+        font-size: 2em;
+        cursor: pointer;
+        z-index: 1;
+      }  
+>>>>>>> animaciones-menu
     .Historia img {
         width: 600px;
         height: 300px;
