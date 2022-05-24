@@ -9,34 +9,36 @@
 body {
     font-family: "Sarpanch", roboto;
 }
-.header{
+
+.header {
     position: sticky;
     top: 0%;
     z-index: 3;
-    display:flex;
+    display: flex;
     flex-direction: column;
-    justify-content:flex-start;
+    justify-content: flex-start;
     background-color: #ffc857;
-    margin: auto;
-    height: 130px;
 }
+
 .container-fluid {
     background-color: #ffc857;
-    align-items: flex-end;
+    height: 100px;
+}
 
-}
 .navbar-light .navbar-nav .nav-link {
-    color:white;
+    color: white;
     font-weight: bold;
-    text-decoration:none;
+    text-decoration: none;
     text-align: center;
-    }
-.logo{
-    width: 150px;
-    margin: 20px;
 }
+
+.logo {
+    width: 150px;
+    padding: 20px;
+}
+
 .principal {
-    height: 135vh;
+    height: 150vh;
     background-image: linear-gradient(rgba(16, 16, 16, .8), rgba(16, 16, 16, .9)), url(../img/galería/g11.jpg);
     background-size: cover;
     max-width: 100%;
@@ -45,11 +47,12 @@ body {
     grid-template-rows: repeat(10, 1fr);
     position: relative;
     z-index: -1;
+    padding-top: 5px;
 }
 
 .principal .contenido {
-    grid-column: 1 / 10;
-    grid-row: 1 / 10;
+    grid-column: 1 / 3;
+    grid-row: 1 / 9;
     color: #fff;
     z-index: 1;
 }
@@ -59,6 +62,8 @@ body {
     font-size: 30px;
     text-align: center;
     text-decoration: underline #ffc857;
+    grid-column: 2/4;
+    margin-left: 70%;
 }
 
 .principal .contenido .n1 {
@@ -78,7 +83,7 @@ body {
 
 .principal .play {
     grid-column: 4 / 4;
-    grid-row: 4/5;
+    grid-row: 4/4;
 }
 
 .principal .contenido p {
@@ -87,8 +92,10 @@ body {
     width: 500px;
 }
 
-.principal .contenido .btn {
+.btn {
     font-size: 1em;
+    grid-column: 1/1;
+    grid-row: 5/5;
     color: #fff;
     background: none;
     padding: 10px 20px;
@@ -98,7 +105,6 @@ body {
 }
 
 .btn:hover {
-    background-color: #EDCB54;
     color: #181818;
 }
 
@@ -132,13 +138,12 @@ body {
 /*Cierre Sección Historia*/
 /*<================================>*/
 /*Pág Calendario*/
-.Calendario {
+.GrillaShows {
     background-color: #177e89;
     position: relative;
-}
-.GrillaShows{
     padding-bottom: 30px;
 }
+
 .GrillaShows h1 {
     color: black;
     font-size: 50px;
@@ -146,6 +151,7 @@ body {
     text-align: center;
     text-decoration: underline #084c61;
 }
+
 .GrillaShows img {
     display: flex;
     float: right;
@@ -153,18 +159,20 @@ body {
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.GrillaShows h2{
+
+.GrillaShows h2 {
     padding-left: 530px;
-    color:white;
+    color: white;
     text-decoration: underline;
     text-decoration-color: #db3a34;
 }
+
 /*Cierre Pág Calendario*/
 /*<================================>*/
 /*Pág Noticias*/
 .Notices {
     background-color: #177e89;
-    position:relative;
+    position: relative;
     height: 250 vh;
     max-width: 100%;
     display: flex;
@@ -175,21 +183,25 @@ body {
 
 }
 
-.Noticias h2{
+.Noticias h2 {
     text-align: center;
     font-size: 30px;
     text-decoration: underline #EDCB54;
 }
-
-.Notices p{
+.Notices img {
+    padding-bottom: 15px;
+}
+.Notices p {
     color: aliceblue;
     font-size: 20px;
     flex-wrap: wrap;
     box-sizing: content-box;
     width: 1000px;
-    height: 80px;
-    box-shadow: 0 0 5px 1px lightgrey;
+    height: 85px;
+    box-shadow: 0 0 5px 2px #db3a34;
     margin-bottom: 20px;
+    padding-top: 5px;
+    padding-left: 5px;
 }
 
 /*Cierre Pág Noticias*/
@@ -200,66 +212,83 @@ body {
     background-color: #177e89;
     position: relative;
 }
+
 .Galería {
     display: grid;
     flex-flow: row wrap;
     position: relative;
 
 }
-.Galería h2{
+
+.Galería h2 {
     text-align: center;
     font-size: 40px;
     text-decoration: underline;
 }
-.Galería iframe{
-    flex-direction:row;
+
+.Galería iframe {
+    flex-direction: row;
     margin-left: 33%;
+    padding-top: 5px;
 }
-.Galería .Imagenes img{
+
+#Imagenes img {
     width: 400px;
     height: 300px;
     margin: 2.5%;
     margin-left: 18%;
 }
-.Multimedia h2{
+.animate__animated.animate__bounce {
+    animation-duration: 1s;
+    animation-play-state: running;
+    
+}
+.Multimedia h2 {
     text-align: center;
     font-size: 40px;
     text-decoration: underline;
 }
-.Multimedia h3{
+
+.Multimedia h3 {
     text-align: center;
     font-size: 20px;
     padding: 20px;
 }
+
 .discos iframe {
-   margin-left: 25%;
+    margin-left: 25%;
 }
+
 .discos h3 {
     padding: 5%;
 }
+
 /*Cierre Pág Multimedia*/
 /*<================================>*/
 /*Pág Contactos y Formulario*/
-.Contactos{
+.Contactos {
     position: relative;
     background-image: url(../img/1489178.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.Contactos h2{
+
+.Contactos h2 {
     text-align: center;
     text-decoration: underline;
     text-decoration-color: #ffc857;
     color: white;
     font-size: 30px;
 }
-.redes{
+
+.redes {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-top: 40px;
 }
-.redes h3{
+
+.redes h3 {
     text-align: center;
     text-decoration: underline;
     text-decoration-color: #db3a34;
@@ -267,19 +296,22 @@ body {
     font-weight: bold;
     font-size: 40px;
 }
-.redes ul{
+
+.redes ul {
     display: inline-block;
     align-self: center;
 }
-.redes a{
+
+.redes a {
     padding: 5px;
 }
+
 /*.nf a{
     padding-left: 210px;
 }*/
 .frmingreso {
     padding-right: 80px;
-    border: 2px solid ;
+    border: 2px solid;
     display: inline-block;
     width: 600px;
     padding: 10px;
@@ -288,28 +320,32 @@ body {
     background-image: url(../img/banner.png);
     font-size: 16px;
 }
+
 .frmingreso input {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #084c61;
     border-radius: 4px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
-.frmingreso h3{
+
+.frmingreso h3 {
     font-size: 20px;
     color: black;
     font-weight: bold;
 }
-.frmingreso label{
+
+.frmingreso label {
     font-size: 18px;
     color: black;
     font-weight: bold;
 
 }
+
 .btnenviar {
-    background-color: white; 
-    color: black; 
+    background-color: white;
+    color: black;
     border: 2px solid #084c61;
 }
 
@@ -317,6 +353,7 @@ body {
     background-color: #59BDF2;
     color: white;
 }
+
 /*Cierre Pág Contactos*/
 /*<================================>*/
 
@@ -340,87 +377,92 @@ body {
     text-decoration: none;
     color: black;
 }
+
 /*Cierre Footer*/
 
 /*********************************/
 /***********************************/
 /*Responsive*/
-/*Generic Laptop 1280x950px*/
-/*@media screen and (max-width:1080px) and (min-width:768px) {
-    .principal .contenido {
-        grid-column: 1 / 1;
-        grid-row: 1 / 10;
-        color: #fff;
-        z-index: 1;
+@media screen and (min-width:800px) and (max-width:1025px) {
+    /*<================================>*/
+    /*Menú para todas las pág*/
+    .navbar-nav {
+        background-color:#ffc857 ;
+        padding-left: 25px;
+        width: 150px;
+        float: right;
+    }
+    .navbar-item li a {
+        color: black;
+        font-size: 30px;
+    }
+    .navbar-item li a:hover {
+        color: red ;
+
+    }
+    /*<================================>*/
+    /*Index*/
+    .principal {
+        height: 1350px;
+    }
+    .principal h3 {
+        text-align: center;
+        margin-left: 70%;
 
     }
 
-    .Historia img {
-        padding-left: 15%;
-    }
-    .GrillaShows img{
-        padding-right: 125px;
-    }
-    .GrillaShows h2{
-        padding-left: 250px;
-    }
-}
-<<<<<<< HEAD
-/*Ipad 768x1024px*/
-@media screen and (min-width:599px) and (max-width:1024px) {
-    
-=======
-/*Ipad 768x1024px
-@media screen and (min-width:599px) and (max-width:1024px) {
-    .navbar {
-        position: relative;
-      }
-      .navbar .menu {
-        position: absolute;
-        width: 100%;
-        height: 70vh;
-        display: grid;
-        align-items: center;
-        background-color: #EDCB54;
-        transform: translateX(500px);
-        transition: all 1s;
-        margin-top: 34em;
-        z-index: 1;
-      } 
-      
-      .navbar .menu li {
-        list-style: none;
-      }  
-      .navbar .menu li a {
-        text-decoration: none;
-        color: #181818;
-        font-size: 1.2em;
-      } 
-      .navbar .menu-bar {
-        grid-column: 8 / 10;
-        color: #fff;
-        font-size: 2em;
-        cursor: pointer;
-        z-index: 1;
-      }  
->>>>>>> animaciones-menu
+
     .Historia img {
         width: 600px;
         height: 300px;
-        padding-left:17.5%;
-
+        margin-left: 7%;
     }
-
     .Historia h3 {
         padding: 5px;
     }
-    .GrillaShows img{
-        width: 700px;
-        height: 500px;
-        padding-right: 75px;
+    /*<================================>*/
+    /*Pág Noticias*/
+    .Notices img {
+        padding-left: 10%;
+        padding-bottom: 10px;
     }
-    .GrillaShows h2{
-        padding-left: 50px;
+    .Noticias h2 {
+        padding-right: 15%;
+    } 
+    .Notices p {
+        width: 700px;
+        height: 100px;
+        padding-left: 5px;
+    }
+    /*<================================>*/
+    /*Pág Multimedia*/
+    .Galería iframe {
+        margin-left: 20%;
+        padding-top: 5px;
+    }
+    #Imagenes img {
+        width: 300px;
+        height: 150px;
+        display: inline-flex;
+        flex-wrap: wrap;
+        margin-left: 110px;
+    }
+    /*<================================>*/
+    /*Pág Calendario*/
+
+    *.GrillaShows img {
+        width: 950px;
+        height: 600px;
+        padding-right: 50px;
     }
 
+    .GrillaShows h2 {
+        padding-left: 30px;
+        text-align: center;
+    }
+   /*<================================>*/
+   /*Pág Contactos*/
+    .frmingreso {
+        margin-left: 200px;
+    }
 }
