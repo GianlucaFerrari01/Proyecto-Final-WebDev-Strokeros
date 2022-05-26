@@ -1,0 +1,28 @@
+@import "variables";
+.header {
+	position: sticky;
+	top: 0%;
+	z-index: 3;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	background-color: $background-color_1;
+    .container-fluid {
+        background-color: $background-color_1;
+        height: 100px;
+    }
+    .navbar-light {
+        .navbar-nav {
+            .nav-link {
+                color: $color_1;
+                font-weight: bold;
+                text-decoration: none;
+                text-align: center;
+            }
+        }
+    }
+    .logo {
+        width: 150px;
+        padding: 20px;
+    }
+}

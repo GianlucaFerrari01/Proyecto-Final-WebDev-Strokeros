@@ -1,0 +1,20 @@
+@import "variables";
+.Footer {
+	background-color: $background-color_5;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	position: relative;
+	.refe {
+		grid-column: 2 / 3;
+		grid-row: 2 / 3;
+		display: flex;
+		justify-content: space-around;
+	}
+}
+.refe {
+	a {
+		text-decoration: none;
+		color: $color_4;
+	}
+}
