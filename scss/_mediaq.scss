@@ -1,5 +1,87 @@
 @import "variables";
-@media screen and (max-width:1025px) {
+/*MediaQ*/ 
+@media screen and (max-width: 1280px) and (min-width: 1025px) {
+	.principal {
+		height: 1350px;
+		h3 {
+			text-align: center;
+			margin-left: 70%;
+		}
+	}
+	.Historia {
+		img {
+			@extend %img-hist;
+			margin-left: 0px;
+			margin-right: 0px;
+			
+		}
+		h3 {
+			padding: 10px;
+		}
+	}
+	/*Noticias*/ 
+	.Notices {
+		img {
+			padding-left: 5px;
+			padding-bottom: 10px;
+		}
+		p {
+			width: 700px;
+			height: 100px;
+			padding-left: 5px;
+		}
+	}
+	.Noticias {
+		h2 {
+			padding-right: 15%;
+		}
+	}
+	/*Multimedia*/ 
+	.Galería {
+		iframe {
+			margin-left: 25%;
+			padding-top: 5px;
+		}
+	}
+	#Imagenes {
+		img {
+			max-width: 300px;
+			height: 150px;
+			display: inline-flex;
+			flex-wrap: wrap;
+			margin-left: 13%;
+		}
+	}
+	.discos {
+		iframe {
+			margin-left: 30%;
+		}
+	}
+	/*Calendario*/ 
+	.GrillaShows {
+		img {
+			max-width: 900px;
+			height: auto;
+			text-align: center;
+			padding-right: 25%;
+		}
+	}
+	.GrillaShows {
+		h2 {
+			font-size: 30px;
+			padding-right: 15%;
+			padding-left: 20%;
+			text-align: center;
+		}
+	}
+	/*Contactos*/
+	.frmingreso {
+		margin-left: 300px;
+		padding-right: 20%;
+	}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
 	.navbar-nav {
 		background-color: $background-color_1;
 		padding-left: 25px;
@@ -16,69 +98,5 @@
 				}
 			}
 		}
-	}
-	.principal {
-		height: 1350px;
-		h3 {
-			text-align: center;
-			margin-left: 70%;
-		}
-	}
-	.Historia {
-		img {
-			width: 600px;
-			height: 300px;
-			margin-left: 7%;
-		}
-		h3 {
-			padding: 5px;
-		}
-	}
-	.Notices {
-		img {
-			padding-left: 10%;
-			padding-bottom: 10px;
-		}
-		p {
-			width: 700px;
-			height: 100px;
-			padding-left: 5px;
-		}
-	}
-	.Noticias {
-		h2 {
-			padding-right: 15%;
-		}
-	}
-	.Galería {
-		iframe {
-			margin-left: 20%;
-			padding-top: 5px;
-		}
-	}
-	#Imagenes {
-		img {
-			width: 300px;
-			height: 150px;
-			display: inline-flex;
-			flex-wrap: wrap;
-			margin-left: 110px;
-		}
-	}
-	*.GrillaShows {
-		img {
-			width: 950px;
-			height: 600px;
-			padding-right: 50px;
-		}
-	}
-	.GrillaShows {
-		h2 {
-			padding-left: 30px;
-			text-align: center;
-		}
-	}
-	.frmingreso {
-		margin-left: 200px;
 	}
 }
