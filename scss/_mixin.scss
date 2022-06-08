@@ -1,0 +1,9 @@
+@mixin noti-ini {
+    height: 300px;
+	width: 400px;
+    padding-left: 20px;
+}
+@mixin text {
+    text-align: center;
+	text-decoration: underline;
+}

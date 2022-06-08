@@ -1,0 +1,73 @@
+@import "variables";
+@import "mixin";
+/*Pág Contactos*/
+.contactos {
+	position: relative;
+	background-image: url(../img/1489178.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	h2 {
+		@include text;
+		text-decoration-color: #ffc857;
+		color: $color_1;
+		font-size: 30px;
+	}
+}
+.redes {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 40px;
+	h3 {
+		@include text;
+		text-decoration-color: #db3a34;
+		color: $color_6;
+		font-weight: bold;
+		font-size: 40px;
+	}
+	ul {
+		display: inline-block;
+		align-self: center;
+	}
+	a {
+		padding: 5px;
+	}
+}
+.frmingreso {
+	padding-right: 80px;
+	border: 2px solid;
+	display: inline-block;
+	width: 600px;
+	padding: 10px;
+	margin-left: 650px;
+	margin-bottom: 120px;
+	background-image: url(../img/banner.png);
+	font-size: 16px;
+	input {
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #084c61;
+		border-radius: 4px;
+		box-sizing: border-box;
+	}
+	h3 {
+		font-size: 20px;
+		color: $color_4;
+		font-weight: bold;
+	}
+	label {
+		font-size: 18px;
+		color: $color_4;
+		font-weight: bold;
+	}
+}
+.btnenviar {
+	background-color: $background-color_3;
+	color: $color_4;
+	border: 2px solid #084c61;
+	&:hover {
+		background-color: $background-color_4;
+		color: $color_1;
+	}
+}

@@ -1,5 +1,14 @@
 @charset "UTF-8";
 @import "https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Sarpanch&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Sarpanch", roboto; }
+
+/*Header*/
 .header {
   position: sticky;
   top: 0%;
@@ -20,80 +29,7 @@
     width: 150px;
     padding: 20px; }
 
-.Footer {
-  background-color: #084c61;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  position: relative; }
-  .Footer .refe {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    display: flex;
-    justify-content: space-around; }
-
-.refe a {
-  text-decoration: none;
-  color: black; }
-
-@media screen and (max-width: 1025px) {
-  .navbar-nav {
-    background-color: #ffc857;
-    padding-left: 25px;
-    width: 150px;
-    float: right; }
-  .navbar-item li a {
-    color: black;
-    font-size: 30px; }
-    .navbar-item li a:hover {
-      color: red; }
-  .principal {
-    height: 1350px; }
-    .principal h3 {
-      text-align: center;
-      margin-left: 70%; }
-  .Historia img {
-    width: 600px;
-    height: 300px;
-    margin-left: 7%; }
-  .Historia h3 {
-    padding: 5px; }
-  .Notices img {
-    padding-left: 10%;
-    padding-bottom: 10px; }
-  .Notices p {
-    width: 700px;
-    height: 100px;
-    padding-left: 5px; }
-  .Noticias h2 {
-    padding-right: 15%; }
-  .Galería iframe {
-    margin-left: 20%;
-    padding-top: 5px; }
-  #Imagenes img {
-    width: 300px;
-    height: 150px;
-    display: inline-flex;
-    flex-wrap: wrap;
-    margin-left: 110px; }
-  *.GrillaShows img {
-    width: 950px;
-    height: 600px;
-    padding-right: 50px; }
-  .GrillaShows h2 {
-    padding-left: 30px;
-    text-align: center; }
-  .frmingreso {
-    margin-left: 200px; } }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-body {
-  font-family: "Sarpanch", roboto; }
-
+/*Fin Header*/
 /*Index*/
 .principal {
   height: 150vh;
@@ -113,17 +49,21 @@ body {
     z-index: 1; }
     .principal .contenido .n1 {
       height: 300px;
-      width: 400px; }
+      width: 400px;
+      padding-left: 20px; }
     .principal .contenido .n2 {
       height: 300px;
-      width: 400px; }
+      width: 400px;
+      padding-left: 20px; }
     .principal .contenido .n3 {
       height: 300px;
-      width: 400px; }
+      width: 400px;
+      padding-left: 20px; }
     .principal .contenido p {
       font-family: "Sarpanch", sans-serif;
       font-size: 20px;
-      width: 500px; }
+      width: 500px;
+      padding-left: 20px; }
   .principal h3 {
     font-family: "Sarpanch", sans-serif;
     font-size: 30px;
@@ -133,7 +73,8 @@ body {
     margin-left: 70%; }
   .principal .play {
     grid-column: 4 / 4;
-    grid-row: 4/4; }
+    grid-row: 4/4;
+    padding-right: 20px; }
 
 .btn {
   font-size: 1em;
@@ -157,8 +98,8 @@ body {
   .Historia h2 {
     color: black;
     font-size: 30px;
-    text-decoration: underline;
-    text-align: center; }
+    text-align: center;
+    text-decoration: underline; }
   .Historia img {
     width: 800;
     height: 500;
@@ -178,7 +119,8 @@ body {
     font-size: 50px;
     font-weight: bold;
     text-align: center;
-    text-decoration: underline #084c61; }
+    text-decoration: underline;
+    text-decoration-color: #084c61; }
   .GrillaShows img {
     display: flex;
     float: right;
@@ -347,30 +289,20 @@ body {
 
 /*Fin Footer*/
 /*MediaQ*/
-@media screen and (max-width: 1025px) {
-  .navbar-nav {
-    background-color: #ffc857;
-    padding-left: 25px;
-    width: 150px;
-    float: right; }
-  .navbar-item li a {
-    color: black;
-    font-size: 30px; }
-    .navbar-item li a:hover {
-      color: red; }
+@media screen and (max-width: 1280px) and (min-width: 1025px) {
   .principal {
     height: 1350px; }
     .principal h3 {
       text-align: center;
       margin-left: 70%; }
   .Historia img {
-    width: 600px;
-    height: 300px;
-    margin-left: 7%; }
+    margin-left: 0px;
+    margin-right: 0px; }
   .Historia h3 {
-    padding: 5px; }
+    padding: 10px; }
+  /*Noticias*/
   .Notices img {
-    padding-left: 10%;
+    padding-left: 5px;
     padding-bottom: 10px; }
   .Notices p {
     width: 700px;
@@ -378,21 +310,87 @@ body {
     padding-left: 5px; }
   .Noticias h2 {
     padding-right: 15%; }
+  /*Multimedia*/
+  .Galería iframe {
+    margin-left: 25%;
+    padding-top: 5px; }
+  #Imagenes img {
+    max-width: 300px;
+    height: 150px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-left: 13%; }
+  .discos iframe {
+    margin-left: 30%; }
+  /*Calendario*/
+  .GrillaShows img {
+    max-width: 900px;
+    height: auto;
+    text-align: center;
+    padding-right: 25%; }
+  .GrillaShows h2 {
+    font-size: 30px;
+    padding-right: 15%;
+    padding-left: 20%;
+    text-align: center; }
+  /*Contactos*/
+  .frmingreso {
+    margin-left: 300px;
+    padding-right: 20%; } }
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .navbar-nav {
+    background-color: #ffc857;
+    padding-left: 25px;
+    padding-right: 0px;
+    width: 150px;
+    float: right; }
+  .navbar-item li a {
+    color: black;
+    font-size: 30px; }
+    .navbar-item li a:hover {
+      color: red; }
+  .container-fluid {
+    --bs-gutter-x: 1 rem; }
+  /*Calendario*/
+  .GrillaShows img {
+    max-width: 800px;
+    height: auto;
+    text-align: center;
+    padding-right: 15%; }
+  .GrillaShows h2 {
+    font-size: 30px;
+    padding-right: 10%;
+    padding-left: 15%;
+    text-align: center; }
+  .Historia img {
+    min-width: 600px;
+    height: 400px;
+    padding-left: 3%;
+    text-align: center; }
+  /*Noticias*/
+  .Notices img {
+    padding-left: 5px;
+    padding-bottom: 10px; }
+  .Notices p {
+    width: 600px;
+    height: 120px;
+    padding-left: 5px; }
+  .Noticias h2 {
+    padding-right: 15%; }
+  /*Multimedia*/
   .Galería iframe {
     margin-left: 20%;
     padding-top: 5px; }
   #Imagenes img {
-    width: 300px;
+    max-width: 300px;
     height: 150px;
     display: inline-flex;
     flex-wrap: wrap;
-    margin-left: 110px; }
-  *.GrillaShows img {
-    width: 950px;
-    height: 600px;
-    padding-right: 50px; }
-  .GrillaShows h2 {
-    padding-left: 30px;
-    text-align: center; }
+    margin-left: 13%; }
+  .discos iframe {
+    margin-left: 30%; }
+  /*Contactos*/
   .frmingreso {
-    margin-left: 200px; } }
+    margin-left: 150px;
+    padding-right: 20%; } }

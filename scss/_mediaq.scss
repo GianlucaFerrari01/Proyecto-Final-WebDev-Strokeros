@@ -1,6 +1,8 @@
 @import "variables";
+
 /*MediaQ*/ 
 @media screen and (max-width: 1280px) and (min-width: 1025px) {
+
 	.principal {
 		height: 1350px;
 		h3 {
@@ -10,7 +12,10 @@
 	}
 	.Historia {
 		img {
-			@extend %img-hist;
+			%img-hist{
+				width: 800px;
+				height: 500px;
+			}
 			margin-left: 0px;
 			margin-right: 0px;
 			
@@ -85,6 +90,7 @@
 	.navbar-nav {
 		background-color: $background-color_1;
 		padding-left: 25px;
+		padding-right: 0px;
 		width: 150px;
 		float: right;
 	}
@@ -98,5 +104,79 @@
 				}
 			}
 		}
+	}
+	.container-fluid {
+		--bs-gutter-x: 1 rem;
+
+	}
+	/*Calendario*/ 
+	.GrillaShows {
+		img {
+			max-width: 800px;
+			height: auto;
+			text-align: center;
+			padding-right: 15%;
+		}
+	}
+	.GrillaShows {
+		h2 {
+			font-size: 30px;
+			padding-right: 10%;
+			padding-left: 15%;
+			text-align: center;
+		}
+	}
+
+	.Historia {
+		img {
+			min-width: 600px;
+			height: 400px;
+		    padding-left: 3%;
+			text-align: center;
+		}
+		
+	}
+	/*Noticias*/ 
+	.Notices {
+		img {
+			padding-left: 5px;
+			padding-bottom: 10px;
+		}
+		p {
+			width: 600px;
+			height: 120px;
+			padding-left: 5px;
+		}
+	}
+	.Noticias {
+		h2 {
+			padding-right: 15%;
+		}
+	}
+	/*Multimedia*/ 
+	.Galería {
+		iframe {
+			margin-left: 20%;
+			padding-top: 5px;
+		}
+	}
+	#Imagenes {
+		img {
+			max-width: 300px;
+			height: 150px;
+			display: inline-flex;
+			flex-wrap: wrap;
+			margin-left: 13%;
+		}
+	}
+	.discos {
+		iframe {
+			margin-left: 30%;
+		}
+	}
+	/*Contactos*/
+	.frmingreso {
+		margin-left: 150px;
+		padding-right: 20%;
 	}
 }

@@ -1,0 +1,28 @@
+@import "variables";
+@import "mixin";
+/*Pág Calendario*/ 
+.GrillaShows {
+	background-color: $background-color_2;
+	position: relative;
+	padding-bottom: 30px;
+	h1 {
+		color: $color_4;
+		font-size: 50px;
+		font-weight: bold;
+		@include text;
+        text-decoration-color:#084c61;
+	}
+	img {
+		display: flex;
+		float: right;
+		padding-right: 450px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	h2 {
+		padding-left: 470px;
+		color: $color_1;
+		text-decoration: underline;
+		text-decoration-color: #db3a34;
+	}
+}
