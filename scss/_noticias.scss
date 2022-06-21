@@ -1,35 +1,23 @@
 @import "variables";
+@import "mixin";
 /*Pág Noticias*/ 
 .Notices {
 	background-color: $background-color_2;
-	position: relative;
 	height: 250 vh;
+	position: relative;
 	max-width: 100%;
 	display: flex;
 	flex-flow: column wrap;
-	padding-left: 10%;
+	align-items: center;
 	padding-bottom: 50px;
 	padding-top: 30px;
-	img {
-		padding-bottom: 15px;
-	}
-	p {
-		color: $color_5;
-		font-size: 20px;
-		flex-wrap: wrap;
-		box-sizing: content-box;
-		width: 1000px;
-		height: 85px;
-		box-shadow: 0 0 5px 2px #db3a34;
-		margin-bottom: 20px;
-		padding-top: 5px;
-		padding-left: 5px;
-	}
 }
-.Noticias {
-	h2 {
-		text-align: center;
-		font-size: 30px;
-		text-decoration: underline #EDCB54;
-	}
+h2 {
+	text-align: center;
+    text-decoration: underline #ffc857;
+}
+.card {
+	margin-bottom: 10px;
+	--bs-card-bg:#ffc857;
+	--bs-card-border-width: 2px;
 }

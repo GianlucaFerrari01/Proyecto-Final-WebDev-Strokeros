@@ -2,21 +2,18 @@
 /*Footer*/ 
 .Footer {
 	background-color: $background-color_5;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(3, 1fr);
-	position: relative;
-	.refe {
-		grid-column: 2 / 3;
-		grid-row: 2 / 3;
-		display: flex;
-		justify-content: space-around;
-	}
+	display: flex;
+	@include center;
+	height: 100px;
 }
 .refe {
+	width: 100%;
 	a {
-		text-decoration: none;
-		color: $color_4;
+		@include text__footer;
+	}
+	li {
+		@include list__style;
+		padding: 20px;
 	}
 }
 /*Fin Footer*/ 

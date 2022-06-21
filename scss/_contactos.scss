@@ -1,23 +1,27 @@
 @import "variables";
 @import "mixin";
+
 /*Pág Contactos*/
 .contactos {
 	position: relative;
 	background-image: url(../img/1489178.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+
 	h2 {
 		@include text;
 		text-decoration-color: #ffc857;
 		color: $color_1;
-		font-size: 30px;
+		font-size: 50px;
 	}
 }
+
 .redes {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	padding-top: 40px;
+
 	h3 {
 		@include text;
 		text-decoration-color: #db3a34;
@@ -25,49 +29,56 @@
 		font-weight: bold;
 		font-size: 40px;
 	}
+
 	ul {
 		display: inline-block;
 		align-self: center;
 	}
+
 	a {
 		padding: 5px;
 	}
 }
-.frmingreso {
-	padding-right: 80px;
-	border: 2px solid;
-	display: inline-block;
-	width: 600px;
-	padding: 10px;
-	margin-left: 650px;
-	margin-bottom: 120px;
+
+#section {
 	background-image: url(../img/banner.png);
-	font-size: 16px;
-	input {
-		padding: 12px 20px;
-		margin: 8px 0;
-		display: inline-block;
-		border: 1px solid #084c61;
-		border-radius: 4px;
-		box-sizing: border-box;
-	}
-	h3 {
-		font-size: 20px;
-		color: $color_4;
-		font-weight: bold;
-	}
-	label {
-		font-size: 18px;
-		color: $color_4;
-		font-weight: bold;
-	}
-}
-.btnenviar {
-	background-color: $background-color_3;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding: 1rem 2rem;
+	margin-bottom: 20px;
 	color: $color_4;
-	border: 2px solid #084c61;
-	&:hover {
-		background-color: $background-color_4;
-		color: $color_1;
+	font-weight: bold;
+
+	.fieldset {
+		padding: 0.35em 0.75em 0.625em;
+		display: block;
+		margin-inline-start: 2px;
+		margin-inline-end: 2px;
+		padding-block-start: 0.35em;
+		padding-inline-start: 0.75em;
+		padding-inline-end: 0.75em;
+		padding-block-end: 0.625em;
+		min-inline-size: min-content;
+	}
+
+	.form__legend {
+		width: 100%;
+		padding: 0;
+		margin-bottom: 0.5rem;
+		@include font__bold;
+		font-size: 2.3rem;
+		line-height: inherit;
+		
+	}
+
+	.input__label {
+		display: block;
+		@include font__bold;
+		font-size: 2rem;
+		margin-bottom: 0.5rem;
+	}
+	.buttons {
+		padding-top: 5px;
 	}
 }

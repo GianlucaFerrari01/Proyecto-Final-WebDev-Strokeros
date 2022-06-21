@@ -1,9 +1,41 @@
 @mixin noti-ini {
     height: 300px;
-	width: 400px;
+    width: 400px;
     padding-left: 20px;
 }
+
 @mixin text {
     text-align: center;
-	text-decoration: underline;
+    text-decoration: underline;
+}
+
+@mixin text__deco {
+    text-align: center;
+    text-decoration: underline #ffc857;
+}
+
+@mixin text__multi {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+@mixin text__footer {
+    text-align: center;
+    text-decoration: none;
+    color: $color_4;
+}
+@mixin font__bold {
+    font-weight: bold;
+    color: $color_4;
+}
+
+@mixin list__style {
+    text-align: center;
+    list-style: none;
+}
+
+@mixin center {
+    justify-content: center;
+    align-items: center;
 }

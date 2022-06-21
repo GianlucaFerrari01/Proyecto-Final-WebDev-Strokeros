@@ -5,6 +5,9 @@
 	background-color: $background-color_2;
 	position: relative;
 	padding-bottom: 30px;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
 	h1 {
 		color: $color_4;
 		font-size: 50px;
@@ -12,17 +15,12 @@
 		@include text;
         text-decoration-color:#084c61;
 	}
-	img {
-		display: flex;
-		float: right;
-		padding-right: 450px;
-		padding-top: 30px;
-		padding-bottom: 30px;
+	ul {
+		list-style: none;
 	}
 	h2 {
-		padding-left: 470px;
 		color: $color_1;
-		text-decoration: underline;
+		@include text;
 		text-decoration-color: #db3a34;
 	}
 }
