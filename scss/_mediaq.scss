@@ -9,11 +9,9 @@
 	float: right;
 	--bs-nav-link-hover-color: $background-color_2;
 }
-
 .navbar-toggler {
 	color: $background-color_2;
 }
-
 .navbar-item {
 	li {
 		a {
@@ -26,20 +24,25 @@
 		}
 	}
 }
-
 .container-fluid {
 	--bs-gutter-x: 1 rem;
 
 }
-
 .bg-light {
 	--bs-bg-opacity: 0.25;
+}
+@media screen and (min-width:1024px) {
+	/*Index*/
+	.principal {
+		height: 170vh;
+	}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
 	/*Index*/
 	.Historia {
 		img {
 			width: 700px;
+			padding: 5px;
 		}
 	}
 	/*Calendario*/
@@ -94,5 +97,90 @@
 			padding-left: 5px;
 		}
 	}
-	
+}
+
+@media screen and (max-width: 479px) {
+	/*Index*/
+	.principal {
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+		height: 140vh;
+		background-position: center;
+		.contenido {
+			width: auto;
+			.card {
+				height: 300px;
+				width: auto;
+			}
+			p {
+				font-size: 17px;
+				margin-top: -13px;
+				margin-bottom: -2px;
+			}
+			.btn {
+				--bs-btn-padding-x: -0.25rem;
+			}
+		}
+		#play {
+			display: none;
+		}
+	}
+	/*Sección historia en index*/
+	.history {
+		img {
+			height: auto;
+			width: 359px;
+		}
+	}
+	/*Calendario*/
+	.GrillaShows {
+		img {
+			width: 360px;
+			height: auto;
+			padding: 2px;
+		}
+		h2 {
+			font-size: 1.1rem;
+			;
+		}
+	}
+	/*Noticias Individuales*/
+	.pagnotis {
+		#imgTitle {
+			.img-fluid {
+				padding: 5px;
+			}
+		}
+	}
+	/*Multimedia*/
+	.Galería iframe {
+		width: max-content;
+	}
+	#Imagenes {
+		img {
+			width: max-content;
+			padding: 5px;
+		}
+	}
+	/*Contactos*/
+	.redes {
+		h3 {
+			color: white;
+		}
+
+		img {
+			width: 70px;
+			padding: 2px;
+		}
+	}
+	/*Formulario*/
+	#section {
+		.form__legend {
+			font-size: 1.8rem;
+		}
+
+		.input__label {
+			font-size: 1.8rem;
+		}
+	}
 }

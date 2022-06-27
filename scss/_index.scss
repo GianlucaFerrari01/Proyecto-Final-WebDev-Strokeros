@@ -1,6 +1,24 @@
 @import "variables";
 @import "mixin";
 /*Index*/ 
+.index {
+	width: auto;
+}
+.main-title {
+	display: flex;
+	justify-content: center;
+	background-image:linear-gradient(rgba(16, 16, 16, .8), rgba(16, 16, 16, .9)), url(../img/borde.PNG);
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	h3 {
+		font-family: $font-family_2;
+		font-size: 30px;
+		@include text__deco;
+		color: $color_1;
+	}
+}
+/*Main sección*/
 .principal {
 	height: 150vh;
 	background-image: linear-gradient(rgba(16, 16, 16, .8), rgba(16, 16, 16, .9)), url(../img/galería/g11.jpg);
