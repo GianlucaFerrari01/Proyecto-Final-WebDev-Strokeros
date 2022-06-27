@@ -1,7 +1,7 @@
 @import "variables";
 @import "mixin";
-/*Pág Noticias*/ 
-.Notices {
+/*Pág Noticias Main*/ 
+.notices {
 	background-color: $background-color_2;
 	height: 250 vh;
 	position: relative;
@@ -21,3 +21,4 @@ h2 {
 	--bs-card-bg:#ffc857;
 	--bs-card-border-width: 2px;
 }
+/*Fin Pág Noticias Main*/

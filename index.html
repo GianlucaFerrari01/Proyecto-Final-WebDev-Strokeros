@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="música,bandas,canciones,eeuu,lyrics,strokes">
+  <meta name="keywords" content="música,bandas,canciones,eeuu,lyrics,strokes">
   <meta name="description" content="Blog informativo con todas las novedades y noticias de la banda the strokes">
   <title>Strockeros!</title>
   <!--CSS ONLY-->
@@ -15,7 +15,8 @@
   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 </head>
 
-<body>
+<body class="index">
+  <!--Inicio de logo y barra de navegación-->
   <header class="header">
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
@@ -44,62 +45,88 @@
       </div>
     </nav>
   </header>
+  <!--Titulo-->
   <span class="main-title">
     <h3>Noticias Recientes</h3>
   </span>
+  <!--Main Sección Noticias y Spotify-->
   <main class="principal">
+    <div class="w-100 shadow" id="play">
+      <div class="img-fluid" id="spotify">
+        <iframe style="border-radius:12px"
+          src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO04caZO?utm_source=generator" width="100%"
+          height="500" frameBorder="0" allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+      </div>
+    </div>
     <div class="contenido">
-      <div class="card" style="width: 22rem;">
+      <div class="card" style="width: 20rem;">
         <img src="img/n1.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Julian vende una parte correspondiente a sus participaciones en The Strokes.</p>
+          <p class="card-text">Julian vende una parte correspondiente a sus participaciones en The Strokes</p>
           <a href="noticias/not1.html" class="btn btn-primary">Leer más</a>
         </div>
       </div>
-      <div class="card" style="width: 22rem;">
+      <div class="card" style="width: 20rem;">
         <img src="img/n2.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">The Strokes cancela su primera presentación en Primavera Sound Barcelona 2022.</p>
+          <p class="card-text">The Strokes cancela su primera presentación en Primavera Sound Barcelona 2022</p>
           <a href="noticias/not2.html" class="btn btn-primary">Leer más</a>
         </div>
       </div>
-      <div class="card" style="width: 22rem;">
+      <div class="card" style="width: 20rem;">
         <img src="img/n3.png" class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">The Strokes realizara un show en apoyo a la candidata al congreso Kina Collins.</p>
+          <p class="card-text">The Strokes realizara un show en apoyo a la candidata al congreso Kina Collins</p>
           <a href="noticias/not3.html" class="btn btn-primary">Leer más</a>
         </div>
       </div>
     </div>
+
   </main>
   <!--Apertura Sección Historia-->
-  <section class="row">
-    <article class="col col 8">
-      <h2>Historia</h2>
-      <h2>Inicios</h2>
-      <div class="text-center">
-        <img src="img/the strokes this is it.PNG" class="img-fluid" alt="Comienzos">
-      </div>
-      <h3>The Strokes nace hacia finales de los noventas con cinco chicos de familias “bien”. Casablancas, Fraiture y
-        Hammond eran compañeros de colegio, mientras que Valensi y Moretti se unieron en 1999. Al poco tiempo se dan a
-        conocer en bares y eventos de New York y pronto ganan el nombre de Salvadores del Rock. Influenciados por el
-        garage-rock y el punk de los 60s y 70s, en 2001 lanzan su primer EP The Modern, bajo Rough Trade. El éxito que
-        esta tuvo los llevo a firmar ese mismo año con RCA, sello con el que lanzaron su primer y exitoso álbum This It
-        (2001).Este trabajo incluía a los singles Last Nite, Hard To Explain y New York City Cops, tema que sería luego
-        reemplazado por When It Started, a raíz de los atentados del 11 de septiembre. El álbum recibió buenas críticas
-        y fue todo un éxito internacional, convirtiendo a la banda en uno de los nuevos grandes exponentes de la escena
-        rock.
+  <div class="img-fluid">
+    <section class="history">
+      <article>
+        <h2>Historia</h2>
+        <h2>Inicios</h2>
+        <div class="text-center">
+          <img src="img/the strokes this is it.PNG" class="img-fluid" alt="Comienzos">
+        </div>
+        <div>
+          <h3>The Strokes nace hacia finales de los noventas con cinco chicos de familias “bien”. Casablancas, Fraiture
+            y
+            Hammond eran compañeros de colegio, mientras que Valensi y Moretti se unieron en 1999. Al poco tiempo se dan
+            a
+            conocer en bares y eventos de New York y pronto ganan el nombre de Salvadores del Rock. Influenciados por el
+            garage-rock y el punk de los 60s y 70s, en 2001 lanzan su primer EP The Modern, bajo Rough Trade. El éxito
+            que
+            esta tuvo los llevo a firmar ese mismo año con RCA, sello con el que lanzaron su primer y exitoso álbum This
+            It
+            (2001).Este trabajo incluía a los singles Last Nite, Hard To Explain y New York City Cops, tema que sería
+            luego
+            reemplazado por When It Started, a raíz de los atentados del 11 de septiembre. El álbum recibió buenas
+            críticas
+            y fue todo un éxito internacional, convirtiendo a la banda en uno de los nuevos grandes exponentes de la
+            escena
+            rock.</h3>
+        </div>
         <h2>Actualidad</h2>
         <div class="text-center">
           <img src="img/actualidad.jpg" class="img-fluid" alt="actualidad">
         </div>
-        <h3>Hoy en día la banda se encuentra bajo los reflectores de todo el mundo debido a la gira mundial que se
-          encuentra transitando, luego de el último albúm lanzado por la banda "The new abnormal" (2020). Albúm el cuál
-          fue congraciado con ser el primer trabajo de la banda en recibir un premio grammy a "Mejor albúm de rock", las
-          cosas esta con viento en popa para julian y compañia, quienes ya anunciaron que van a seguir trabajando en
-          nuevos singles y ep.</h3>
-    </article>
-  </section>
+        <div>
+          <h3>Hoy en día la banda se encuentra bajo los reflectores de todo el mundo debido a la gira mundial que se
+            encuentra transitando, luego de el último albúm lanzado por la banda "The new abnormal" (2020). Albúm el
+            cuál
+            fue congraciado con ser el primer trabajo de la banda en recibir un premio grammy a "Mejor albúm de rock",
+            las
+            cosas esta con viento en popa para julian y compañia, quienes ya anunciaron que van a seguir trabajando en
+            nuevos singles y ep.</h3>
+        </div>
+      </article>
+    </section>
+  </div>
   <!--Cierre Sección Historia-->
   <!-- JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"

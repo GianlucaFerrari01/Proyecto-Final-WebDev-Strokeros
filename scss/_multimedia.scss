@@ -2,7 +2,7 @@
 @import "mixin";
 
 /*Pág Multimedia*/
-.Multimedia {
+.multimedia {
 	background-color: $background-color_2;
 	position: relative;
 	h2 {
@@ -15,7 +15,7 @@
 	}
 }
 
-#Galería {
+.galería {
 	display: grid;
 	flex-flow: row wrap;
 	position: relative;
@@ -24,12 +24,11 @@
 	}
 	#videos {
 		flex-direction: row;
-		margin-left: 30%;
 		padding-top: 5px;
 	}
 }
 
-#Imagenes {
+#imagenes {
 	display:flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;

@@ -1,6 +1,6 @@
 @import "variables";
 @import "mixin";
-/*Index*/ 
+/*Body Index*/ 
 .index {
 	width: auto;
 }
@@ -42,28 +42,16 @@
 			font-size: 20px;
 		}
 	}
-	
-	.play {
+	#play {
+		z-index: 1;
 		grid-column: 3/3;
 		grid-row: 2/2;
         padding-right: 20px;
 	}
 }
-.main-title {
-	display: flex;
-	justify-content: center;
-	background-image:linear-gradient(rgba(16, 16, 16, .8), rgba(16, 16, 16, .9)), url(../img/borde.PNG);
-	background-position: center;
-	background-repeat: no-repeat;
-	h3 {
-		font-family: $font-family_2;
-		font-size: 30px;
-		@include text__deco;
-		color: $color_1;
-	}
-}
 
-.row {
+/*Sección historia*/
+.history {
 	background-color: $background-color_2;
 	display: flex;
 	position: relative;
@@ -83,3 +71,4 @@
 		padding: 20px;
 	}
 }
+/*Fin Index*/ 
